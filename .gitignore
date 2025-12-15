@@ -1,0 +1,18 @@
+# Environment variables (SECURITY RISK)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Database
+*.db
+Database/
+
+# Documents (Don't upload personal files)
+Doc/
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db

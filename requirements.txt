@@ -1,0 +1,6 @@
+pandas
+openpyxl
+pypdf
+openai>=1.0.0
+rich
+python-dotenv
