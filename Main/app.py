@@ -90,6 +90,10 @@ def health_check():
         console.print("OpenAI API Key: [red]Missing[/red] (Check environment variables)")
 
 def run():
+    # Ensure essential directories exist
+    if not config.DOC_DIR.exists():
+        config.DOC_DIR.mkdir(parents=True, exist_ok=True)
+
     # Ensure DB exists
     db.init_db()
     

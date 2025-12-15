@@ -24,6 +24,9 @@ def get_connection():
 
 def init_db():
     """Initializes the database schema."""
+    if not config.DATABASE_DIR.exists():
+        config.DATABASE_DIR.mkdir(parents=True, exist_ok=True)
+    
     conn = get_connection()
     try:
         cursor = conn.cursor()
